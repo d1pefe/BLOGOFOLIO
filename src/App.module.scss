@@ -1,0 +1,13 @@
+.container {
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Inter", sans-serif;
+}

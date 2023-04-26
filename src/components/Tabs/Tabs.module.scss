@@ -1,0 +1,44 @@
+@import "src/assets/colors";
+
+.container {
+	display: flex;
+	gap: 40px;
+	border-bottom: 1px solid $medium;
+}
+
+.tab {
+	color: $secondary;
+	display: flex;
+	justify-content: center;
+	padding: 0 40px 24px;
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+	&:hover {
+		cursor: pointer;
+		color: $primary;
+	}
+}
+
+.activeTab {
+	border-bottom: 2px solid $secondary;
+}
+
+.disabled {
+	color: $gray;
+	&:hover {
+		cursor: not-allowed;
+		color: $gray;
+	}
+}
+.darkContainer {
+	border-bottom-color: $gray;
+	.tab {
+		color: $white;
+	}
+	.activeTab {
+		border-bottom-color: $white;
+	}
+}

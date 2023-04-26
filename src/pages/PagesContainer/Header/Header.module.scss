@@ -1,0 +1,74 @@
+@import "src/assets/colors";
+
+.container {
+	height: 84px;
+	display: flex;
+	justify-content: space-between;
+	background-color: $primary;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.infoContainer {
+	display: flex;
+}
+.input {
+	min-height: 84px;
+	margin: 0;
+	flex: 1;
+	background-color: $primary-secondary;
+	color: $white;
+	&::placeholder {
+		color: rgba(255, 255, 255, 0.5);
+	}
+}
+
+.button {
+	height: 84px;
+	width: 84px;
+	padding: 28px;
+	border-left: 1px solid $primary-secondary;
+	border-right: 1px solid $primary-secondary;
+}
+.menuContainer {
+	position: absolute;
+	top: 84px;
+	left: 0;
+	background-color: $white;
+	width: 236px;
+	height: calc(100% - 84px);
+	display: flex;
+	position: fixed;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.authButton {
+	height: 84px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.actionsContainer {
+	display: flex;
+	flex-direction: column;
+}
+.navButton {
+	border-bottom: 1px solid $light;
+	height: 84px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	color: $secondary;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+	&:hover {
+		color: $primary;
+		cursor: pointer;
+	}
+}
+.activeNavButton {
+	color: $primary;
+}

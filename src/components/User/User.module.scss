@@ -1,0 +1,39 @@
+@import "src/assets/mixins";
+@import "src/assets/colors";
+
+.userframe {
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 17px 30px;
+	max-width: 500px;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 34px;
+	color: $white;
+	background-color: $primary;
+	box-sizing: content-box;
+	&:hover {
+		background-color: $primary-secondary;
+		cursor: pointer;
+	}
+	& :nth-child(1) {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0 16px 0 0;
+		width: 48px;
+		height: 48px;
+		border-radius: 2px;
+		background: $primary-secondary;
+	}
+	& :nth-child(2) {
+		display: inline-flex;
+		align-items: center;
+		margin: 0;
+		height: 48px;
+		text-align: center;
+	}
+}

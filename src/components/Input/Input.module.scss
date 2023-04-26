@@ -1,0 +1,54 @@
+@import "src/assets/colors";
+
+.title {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 20px;
+	color: $secondary;
+	margin-bottom: 8px;
+}
+.darkTitle {
+	color: $white;
+}
+
+.input {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	padding: 17px 20px;
+	background: $white;
+	border-radius: 2px;
+	border: 2px solid transparent;
+	width: 544px;
+	margin-top: 8px;
+	outline: none;
+
+	&:focus,
+	&:hover {
+		border: 2px solid $medium;
+	}
+
+	&:active {
+		border: 2px solid transparent;
+	}
+}
+
+.disabled {
+	background: $light;
+	cursor: not-allowed;
+}
+
+.error {
+	border: 2px solid $error;
+	&:focus {
+		border: 2px solid $error;
+	}
+}
+
+.errorText {
+	margin-top: 16px;
+	color: $error;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+}

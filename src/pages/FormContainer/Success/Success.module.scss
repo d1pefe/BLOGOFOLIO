@@ -1,0 +1,46 @@
+@import "./src/assets/colors";
+
+.container {
+	background-color: $extra-light;
+}
+.containerDark {
+	background-color: $secondary;
+}
+.backHome {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: $secondary;
+	margin-bottom: 32px;
+	&:hover {
+		cursor: pointer;
+	}
+}
+.backHomeDark {
+	color: $white;
+}
+.title {
+	text-align: start;
+	margin-bottom: 72px;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.email {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: $secondary;
+}
+.emailDark {
+	border-color: $gray;
+	color: $white;
+}
+.button {
+	text-align: center;
+	margin-top: 48px;
+	width: 544px;
+}

@@ -1,0 +1,11 @@
+@import "src/assets/mixins";
+@import "src/assets/colors";
+
+.title {
+	max-width: 500px;
+	width: fit-content;
+	margin-bottom: 40px;
+}
+.darkTitle {
+	color: $white;
+}

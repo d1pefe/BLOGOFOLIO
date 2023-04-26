@@ -1,0 +1,87 @@
+@import "./src/assets/colors";
+
+.container {
+	background-color: $extra-light;
+}
+.containerDark {
+	background-color: $secondary;
+}
+.backHome {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: $secondary;
+	margin-bottom: 32px;
+	text-decoration: none;
+	&:hover {
+		cursor: pointer;
+	}
+}
+.backHomeDark {
+	color: $white;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.inputContainer {
+	border: 1px solid $medium;
+	padding: 40px;
+}
+.inputContainerDark {
+	border-color: $gray;
+}
+.input {
+	display: flex;
+	gap: 40px;
+	flex-direction: column;
+}
+.title {
+	text-align: start;
+	margin-bottom: 72px;
+	text-decoration: none;
+}
+.forgotPassword {
+	font-size: 16px;
+	line-height: 20px;
+	color: $secondary;
+	font-weight: 400;
+	margin-top: 16px;
+	&:hover {
+		color: $primary;
+		cursor: pointer;
+	}
+}
+.forgotPasswordDark {
+	color: $white;
+}
+.button {
+	text-align: center;
+	width: 544px;
+	margin-top: 48px;
+}
+.signUp {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+	color: $gray;
+	display: flex;
+	justify-content: center;
+	margin-top: 24px;
+	.signInbtn {
+		color: $primary;
+		margin-left: 4px;
+		text-decoration: none;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}
+.signUpDark {
+	color: $medium;
+	.signInbtn {
+		color: $primary-secondary;
+	}
+}

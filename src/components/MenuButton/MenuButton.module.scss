@@ -1,0 +1,14 @@
+@import "src/assets/colors";
+
+.menu {
+	margin: 0;
+	padding: 0;
+	height: 84px;
+	width: 84px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&:hover {
+		background-color: $primary;
+	}
+}
